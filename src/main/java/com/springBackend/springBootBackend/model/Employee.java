@@ -1,12 +1,16 @@
 package com.springBackend.springBootBackend.model;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="employee")
+@Table(name = "employee")
+@Getter
+@Setter
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
